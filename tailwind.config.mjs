@@ -12,12 +12,15 @@ export default {
         color2: "#ED6300",
         color3: "#040876",
         color4: "#919499",
+        color5: "#EEE6F1",
+        color6: "#FFAE00",
       },
     },
     fontFamily: {
       font1: ['"Raleway"', "serif"],
       font2: ['"Inter"', "serif"],
       font3: ['"Poppins"', "serif"],
+      font4: ['"Open Sans"', "serif"],
 
     },
   },
