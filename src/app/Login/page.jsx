@@ -22,12 +22,12 @@ const Login = () => {
   return (
     <div>
         <div className='flex '>
-            <div className=' bg-[#040876] w-full h-[100vh] p-5'>
-                <Image src={logo1} alt='logo'/>
+            <div className='hidden lg:block bg-[#040876] w-full h-[100vh] p-5'>
+                <Image src={logo1} alt='logo' loading='lazy'/>
                 <div className='flex flex-col items-center justify-center pt-20 relative'>
                     <div className='flex flex-col items-center space-y-4'>
-                        <Image src={background2} alt='background2' className='relative' />
-                        <Image src={background1} alt='background1' className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2' />
+                        <Image src={background2} alt='background2' loading='lazy' className='relative' />
+                        <Image src={background1} alt='background1' loading='lazy' className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2' />
                         
                     </div>
                     
@@ -43,11 +43,11 @@ const Login = () => {
                
                 </div>
             </div>
-            <div className='bg-white w-full h-[100vh] p-20 flex flex-col items-center justify-center '>
-                <div className=' w-full h-auto shadow-md rounded-lg px-20 py-8'>
+            <div className='bg-white w-full h-[100vh] lg:p-20 p-4 flex flex-col items-center justify-center '>
+                <div className=' w-full h-auto shadow-md rounded-lg lg:px-20 px-4 py-8'>
                     <div className='text-center mb-5'>
-                        <h2 className='text-[#660476] text-[32px] font-[700]'>Login as <span className='text-[#040876]'>Administrator</span></h2>
-                        <p className='text-[#667085] font-font3'>Welcome back! Please enter your details.</p>
+                    <h2 className='text-[#660476] text-[24px] lg:text-[32px] font-[700]'>Login as <span className='text-[#040876]'>Administrator</span></h2>
+                    <p className='text-[#667085] font-font3'>Welcome back! Please enter your details.</p>
                     </div>
                     <form action="">
                         <div>
@@ -68,14 +68,14 @@ const Login = () => {
                                 {showPassword ? <FaEyeSlash /> : <FaEye />} {/* Toggle eye icon */}
                             </span>                      
                         </div>
-                        <div className='flex justify-center items-center space-x-8 my-4'>
+                        <div className='flex lg:justify-betweeen justify-between items-center my-4'>
                             <div className='flex items-center space-x-2'>
                                 <input type="checkbox" id="remember" name="remember" value="remember-me"/>
-                                <p className='text-[20px] font-medium text-[#48505E] font-font3'>Remember for 30 days</p>
+                                <p className='lg:text-[20px] sm:text-[12px] font-medium text-[#48505E] font-font3'>Remember for 30 days</p>
                             </div>
                             <div>
                                 <Link href="/reset-password">
-                                    <p className='text-[20px] text-[#ED6300] font-medium font-font3'>Forgot password</p>
+                                    <p className='lg:text-[20px] sm:text-[12px] text-[#ED6300] font-medium font-font3'>Forgot password</p>
                                 </Link>
                             </div>
                         </div>

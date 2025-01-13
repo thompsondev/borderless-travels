@@ -33,7 +33,7 @@ const ForgetPassword = () => {
   return (
     <div>
         <div className='flex '>
-            <div className=' bg-[#040876] w-full h-[100vh] p-5'>
+            <div className='hidden lg:block bg-[#040876] w-full h-[100vh] p-5'>
                 <Image src={logo1} alt='logo'/>
                 <div className='flex flex-col items-center justify-center pt-20 relative'>
                     <div className='flex flex-col items-center space-y-4'>
@@ -54,8 +54,8 @@ const ForgetPassword = () => {
                
                 </div>
             </div>
-            <div className='bg-white w-full h-[100vh] p-20 flex flex-col items-center justify-center '>
-                <div className=' w-full h-auto shadow-md rounded-lg px-20 py-8'>
+            <div className='bg-white w-full h-[100vh] lg:p-20 p-4 flex flex-col items-center justify-center '>
+                <div className=' w-full h-auto shadow-md rounded-lg lg:px-20 px-4 py-8'>
                     <div className='text-center mb-5'>
                         <h2 className='text-color3 text-[30px] font-[700]'>Forgot Password</h2>
                         <p className='text-[#667085] font-font3 pt-2 text-[14px]'>Please select option to send link reset password</p>

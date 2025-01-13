@@ -5,7 +5,7 @@ import { IoMdSettings } from "react-icons/io";
 import Language from './components/Language';
 import Message from './components/message/Page';
 import Notifications from './components/notification/Notifications';
-import Profile from './components/Profile';
+import Profile from './components/profile/Profile';
 import AdminStatus from './components/AdminStatus';
 
 
